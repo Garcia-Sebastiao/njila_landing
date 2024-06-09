@@ -1,0 +1,62 @@
+{
+  "app": {
+    "header": {
+      "nav": {
+        "home": "Início",
+        "about-us": "Sobre nós",
+        "portfolio": "Portofólio",
+        "our-team": "Nossa equipe",
+        "services": "Serviços",
+        "contacts": "Contactos"
+      }
+    },
+
+    "banner": {
+      "title": {
+        "span1": "Yedika",
+        "span2": " Njila",
+        "span3": " Ye!"
+      },
+      "label": "Na NjilaBrand estamos dedicados a construir um caminho de sucesso para a sua marca.",
+      "read-more": "Saiba mais",
+
+      "floats": {
+        "innovation": {
+          "title": "Inovação",
+          "label": "Soluções inovadoras"
+        },
+        "creativity": {
+          "title": "Criatividade",
+          "label": "Trilha criativa"
+        }
+      }
+    },
+
+    "intro": {
+      "link": "Build Your Njila",
+      "title": "Agência digital criativa para a sua empresa.",
+      "label": "Desde a concepção criativa até a implementação estratégica, estamos aqui para alavancar e destacar a sua marca"
+    },
+
+    "about-us": {
+      "title": {
+        "span": "Sobre nós",
+        "label": {
+          "passion": " Paixão",
+          "creativity": "Criatividade",
+          "innovation": " Inovação.",
+          "for": " pela ",
+          "and": " e",
+          "label": "Somos uma empresa angolana jovem, impulsionada pela "
+        }
+      },
+
+      "label1": "Em um mundo onde a expressão visual é vital, estamos aqui para transformar ideias em realidade, destacando-nos como uma força impulsionadora no cenário do design gráfico, marketing digital e publicidade.",
+      "label2": " Na NjilaBrand, não apenas construímos marcas; moldamos narrativas que transcendem o comum."
+    },
+
+    "our-essence": {
+      "title": "Nossa <span style='color: red;'>Essência</span>"
+    }
+  }
+}
