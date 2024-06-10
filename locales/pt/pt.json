@@ -56,7 +56,63 @@
     },
 
     "our-essence": {
-      "title": "Nossa <span style='color: red;'>Essência</span>"
+      "title": {
+        "span1": "Nossa",
+        "span2": " Essência"
+      },
+
+      "cards": {
+        "mission": {
+          "title": "Nossa Missão",
+          "label": "Agregar valor aos seus negócios, potencializar o crescimento das suas operações e promover relacionamento com o seu público alvo."
+        },
+
+        "vision": {
+          "title": "Nossa Visão",
+          "label": "Ser uma referência exponencial no mundo digital englobando Marketing e Publicidade através da inovação, bom relacionamento e a excelência em nossos produtos e serviços."
+        },
+
+        "values": {
+          "title": "Nossos Vaalores",
+          "label": "Inovação ,Criatividade, Divergência, Profissionalismo, União Comprometimento."
+        }
+      }
+    },
+
+    "portfolio": {
+      "title": {
+        "label": "Nosso",
+        "span": "Portfólio"
+      },
+
+      "label": "Veja os diversos projetos em que já trabalhamos, brinde os seus olhos com a qualidade dos nossos serviços",
+
+      "branding": {
+        "title": "Branding",
+        "label": "Somos uma empresa atuante nas áreas de Marketing e Publicidade desenvolvendo."
+      }
+    },
+
+    "our-team": {
+      "title": {
+        "span": "Conheça",
+        "label": "Nossa Equipe!"
+      },
+
+      "label": "A nossa equipa é dinâmica, ousada e impulsionada pela sede de  desafios. A excelência não é apenas um  objetivo, é um compromisso inabalável.",
+      "team": {
+        "garcia": {
+          "name": "Garcia Pedro",
+          "role": "CTO",
+          "description": "Garcia Pedro, nosso CTO na NjilaBrand, é o mestre dos códigos e arquitetura web. Com mais de 4 anos de experiência como desenvolvedor web fullstack, ele lidera nossa equipe com maestria, garantindo que cada projeto seja construído com precisão técnica e criatividade excepcional. "
+        },
+
+        "crisvan": {
+          "name": "Crisvan Van-dúnem",
+          "role": "CEO",
+          "description": "Crisvan dos Santos é um designer com 4 anos de experiência CEO e Founder da NjilaBrand, especializado em design gráfico, motion design e design de interface de usuário. Motivado por um desejo constante de aprimoramento, Crisvan percebeu que poderia transformar essa paixão em uma carreira profissional. Inspirado por essa descoberta, ele se dedicou a continuar seu desenvolvimento e hoje se destaca como um talentoso e dedicado designer."
+        }
+      }
     }
   }
 }
