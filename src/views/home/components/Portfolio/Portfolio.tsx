@@ -58,7 +58,9 @@ export function Portfolio() {
                 </p>
               </div>
 
-              <div className="w-full h-2 rounded-xl bg-[#FFF7EB25]"></div>
+              <div className="w-full relative h-[11px] rounded-xl bg-[#FFF7EB25]">
+                <div className="absolute top-0 left-6 w-14 h-full rounded-xl bg-orangeFruit" />
+              </div>
             </div>
           </div>
         </div>

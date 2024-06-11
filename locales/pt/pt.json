@@ -113,6 +113,56 @@
           "description": "Crisvan dos Santos é um designer com 4 anos de experiência CEO e Founder da NjilaBrand, especializado em design gráfico, motion design e design de interface de usuário. Motivado por um desejo constante de aprimoramento, Crisvan percebeu que poderia transformar essa paixão em uma carreira profissional. Inspirado por essa descoberta, ele se dedicou a continuar seu desenvolvimento e hoje se destaca como um talentoso e dedicado designer."
         }
       }
+    },
+
+    "services": {
+      "title": {
+        "title": "O que podemos ",
+        "span": "Fazer por ti"
+      },
+
+      "label": "Somos uma empresa atuante nas áreas de Marketing e Publicidade desenvolvendo produtos e serviços que sirvam de auxílio para o seu público alvo.",
+      "design": {
+        "title": "Design personalizado",
+        "label": "Cada projeto é uma obra-prima única, cuidadosamente elaborada para transmitir a essência da sua marca de forma visualmente impactante. Desde logos memoráveis até designs de produtos inovadores. Estamos aqui para transformar sua visão em realidade, com paixão e comprometimento incomparáveis."
+      },
+
+      "marketing": {
+        "title": {
+          "label": "Marketing",
+          "span": "Digital"
+        },
+
+        "label": "Desenvolvemos campanhas de marketing focadas em ressaltar a qualidade dos seus produtos e serviços levando o DNA da sua marca. Com estratégias personalizadas e criativas, estamos aqui para aumentar sua presença digital, envolver seu público-alvo e impulsionar o crescimento do seu negócio."
+      },
+
+      "web": {
+        "title": {
+          "label": "Desenvolvimento",
+          "span": "Web"
+        },
+
+        "label": "somos especialistas em desenvolvimento web, com um foco especial em UI e UX Design. Nossa equipe talentosa combina habilidades técnicas avançadas com uma compreensão profunda de User Experience para criar websites que não apenas impressionam visualmente, mas também oferecem experiências excepcionais aos visitantes."
+      }
+    },
+
+    "contacts": {
+      "title": {
+        "title": "Conecte-se a",
+        "span": "Njilabrand"
+      },
+
+      "label": "Assine à nossa Newsletter e mantenha-se atualizado sobre lançamentos e eventos da NjilaBrand. ",
+
+      "form": {
+        "email": "Digite seu email",
+        "button": "Enviar"
+      }
+    },
+
+    "footer": {
+      "title": "Contactos",
+      "copy": "Todos os direitos reservados a Njilabrand 2023."
     }
   }
 }

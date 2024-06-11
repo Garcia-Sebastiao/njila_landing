@@ -20,7 +20,7 @@ export function OurTeam() {
         </p>
       </div>
 
-      <div className="flex w-full justify-center gap-x-16">
+      <div className="flex w-full justify-center items-center gap-x-16">
         <div className="flex flex-col gap-y-7">
           <div className="flex flex-col gap-y-4 max-w-2xl">
             <h4 className="text-3xl font-black text-purpleColor">
@@ -46,6 +46,10 @@ export function OurTeam() {
             <p className="text-lg text-[#00000050]">
               {translate("our-team.team.crisvan.description")}
             </p>
+          </div>
+
+          <div className="w-full relative h-[11px] rounded-xl bg-orangeFruit bg-opacity-10 max-w-xs mt-24">
+            <div className="absolute top-0 left-6 w-14 h-full rounded-xl bg-orangeFruit" />
           </div>
         </div>
 
