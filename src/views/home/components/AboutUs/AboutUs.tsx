@@ -1,11 +1,15 @@
 import { AboutUsIllustration } from "@/assets/illustrations/AboutUsIllustration";
+import { Container } from "@/components/layout/container/Container";
 import { useTranslations } from "next-intl";
+import AboutImage from "./Frame 69.svg";
+import Image from "next/image";
 
 export function AboutUs() {
   const translate = useTranslations("app");
   return (
-    <div className="w-full container mx-auto flex items-center gap-x-32">
-      <div>{AboutUsIllustration}</div>
+    <Container className="flex flex-col lg:flex-row items-center gap-y-16 gap-x-32">
+      <Image src={AboutImage} alt="" />
+
       <div className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-y-3">
           <span className="text-2xl font-black text-orangeFruit">
@@ -40,6 +44,6 @@ export function AboutUs() {
           {translate("about-us.label2")}
         </p>
       </div>
-    </div>
+    </Container>
   );
 }

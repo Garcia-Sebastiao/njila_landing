@@ -16,6 +16,13 @@ const config: Config = {
         purpleColor: "#662ABC",
         blueOcean: "#1883E9",
       },
+
+      screens: {
+        sm: "320px",
+        md: "640px",
+        lg: "1280px",
+        xl: "1366px",
+      },
     },
   },
   plugins: [],

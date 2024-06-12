@@ -5,7 +5,7 @@ export function Contacts() {
   const translate = useTranslations("app");
 
   return (
-    <div className="w-full relative mt-64">
+    <div className="w-full relative mt-32 lg:mt-64">
       <div className="w-full mx-auto container relative flex flex-col justify-start">
         <div className="flex flex-col gap-y-6">
           <h2 className="font-black text-4xl">
@@ -19,14 +19,14 @@ export function Contacts() {
             {translate("contacts.label")}
           </p>
 
-          <form action="" className="flex gap-x-6">
+          <form action="" className="flex flex-col gap-y-6 md:flex-row gap-x-6">
             <input
               type="email"
               placeholder={translate("contacts.form.email")}
-              className="bg-[#00000010] text-[#00000050] w-96 border p-4 rounded-2xl text-xl border-[#ffffff90] backdrop-blur-md"
+              className="bg-[#00000010] text-[#00000050] 2-full md:w-96 border p-4 rounded-2xl text-xl border-[#ffffff90] backdrop-blur-md"
             />
 
-            <button className="bg-orangeFruit px-16 text-xl py-4 rounded-2xl text-white">
+            <button className="bg-orangeFruit transition-all hover:brightness-90 px-16 text-xl py-4 rounded-2xl text-white">
               {translate("contacts.form.button")}
             </button>
           </form>

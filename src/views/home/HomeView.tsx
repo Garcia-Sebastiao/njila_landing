@@ -13,8 +13,8 @@ export function HomeView() {
     <>
       <Banner />
       <Intro />
-      <div className="w-full flex flex-col mt-40 gap-y-40">
-        <Partners />
+      <div className="w-full flex flex-col mt-10 md:mt-32 lg:mt-40 gap-y-32 lg:gap-y-32">
+        {/* <Partners /> */}
         <AboutUs />
         <OurEssence />
         <Portfolio />

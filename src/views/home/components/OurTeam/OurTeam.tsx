@@ -8,7 +8,7 @@ export function OurTeam() {
   return (
     <div className="w-full flex container mx-auto flex-col items-center gap-y-32">
       <div className="flex flex-col gap-y-4 items-center">
-        <h2 className="text-4xl font-black text-textColor">
+        <h2 className="text-4xl text-center font-black text-textColor">
           <span className="text-blueOcean">
             {translate("our-team.title.span")}
           </span>{" "}
@@ -20,7 +20,65 @@ export function OurTeam() {
         </p>
       </div>
 
-      <div className="flex w-full justify-center items-center gap-x-16">
+      <div className="lg:hidden flex flex-col items-center gap-y-14">
+        <div className="flex flex-col items-center gap-y-8">
+          <div className="relative w-[20rem] h-[25rem]">
+            <Image
+              src={Member1}
+              alt="Garcia"
+              className="w-full h-full object-cover rounded-[2rem]"
+            />
+
+            <div className="bg-[#370C7532] backdrop-blur-md absolute top-8 -right-0 md:-right-32 lg:right-0 px-8 py-4 rounded-2xl border border-[#ffffff90] flex items-center justify-center">
+              <span className="text-white font-bold text-2xl ">
+                Garcia Pedro
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col gap-y-4 max-w-2xl">
+            <h4 className="text-3xl font-black text-purpleColor">
+              {translate("our-team.team.garcia.name")} -{" "}
+              <span className="text-orangeFruit">
+                {translate("our-team.team.garcia.role")}
+              </span>
+            </h4>
+
+            <p className="text-lg text-[#00000050]">
+              {translate("our-team.team.garcia.description")}
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-y-8">
+          <div className="relative w-[20rem] h-[25rem]">
+            <Image
+              src={Member2}
+              alt="Crisvan"
+              className="w-full h-full object-cover rounded-[2rem]"
+            />
+
+            <div className="bg-[#370C7532] backdrop-blur-md absolute top-[70%] lg:top-0 left-0 md:-left-40 px-8 py-4 rounded-2xl border border-[#ffffff90] flex items-center justify-center">
+              <span className="text-white font-bold text-2xl ">
+                Crisvan Van-Dúnem
+              </span>
+            </div>
+          </div>
+          <div className="flex flex-col items-start gap-y-4 max-w-2xl">
+            <h4 className="text-3xl font-black text-purpleColor">
+              {translate("our-team.team.crisvan.name")} -{" "}
+              <span className="text-orangeFruit">
+                {translate("our-team.team.crisvan.role")}
+              </span>
+            </h4>
+
+            <p className="text-lg  text-[#00000050]">
+              {translate("our-team.team.crisvan.description")}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="hidden lg:flex w-full justify-center items-center gap-x-16">
         <div className="flex flex-col gap-y-7">
           <div className="flex flex-col gap-y-4 max-w-2xl">
             <h4 className="text-3xl font-black text-purpleColor">
@@ -60,6 +118,7 @@ export function OurTeam() {
               alt="Garcia"
               className="w-full h-full object-cover rounded-[2rem]"
             />
+
             <div className="bg-[#370C7532] backdrop-blur-md absolute top-8 -right-32 px-8 py-4 rounded-2xl border border-[#ffffff90] flex items-center justify-center">
               <span className="text-white font-bold text-2xl ">
                 Garcia Pedro
