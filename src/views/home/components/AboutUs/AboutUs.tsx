@@ -8,9 +8,9 @@ export function AboutUs() {
   const translate = useTranslations("app");
   return (
     <Container className="flex flex-col lg:flex-row items-center gap-y-16 gap-x-32">
-      <Image src={AboutImage} alt="" />
+      <Image data-aos="fade-right" src={AboutImage} alt="" />
 
-      <div className="flex flex-col gap-y-6">
+      <div data-aos="fade-left" className="flex flex-col gap-y-6">
         <div className="flex flex-col gap-y-3">
           <span className="text-2xl font-black text-orangeFruit">
             {translate("about-us.title.span")}

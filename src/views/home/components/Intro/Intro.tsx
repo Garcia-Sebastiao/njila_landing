@@ -1,10 +1,10 @@
 import { ChevronDown } from "@/assets/icons/ChevronDown";
 import Link from "next/link";
 import styles from "./styles.module.css";
-import { BannerAsset } from "@/assets/images/Banner/BannerAsset";
 import { useTranslations } from "next-intl";
 import { IntroImage1 } from "./assets/IntroImage1";
 import { IntroImage2 } from "./assets/IntroImage2";
+import { Container } from "@/components/layout/container/Container";
 
 export function Intro() {
   const translate = useTranslations("app");
@@ -16,6 +16,7 @@ export function Intro() {
           {translate("intro.link")}
         </span>
         <Link
+          data-aos="fade-up"
           href="#"
           className="bg-white rounded-full flex justify-center items-center p-6 "
         >
@@ -25,9 +26,11 @@ export function Intro() {
         </Link>
       </div>
 
-      <div className="w-full mx-auto items-center  gap-x-10 flex pt-0 lg:pt-32 justify-center">
-        <div className="hidden lg:block">{IntroImage2}</div>
-        <div className="flex flex-col items-center gap-y-4">
+      <Container className="w-full mx-auto items-center  gap-x-10 flex pt-0 lg:pt-32 justify-center">
+        <div className="hidden lg:block" data-aos="fade-left">
+          {IntroImage2}
+        </div>
+        <div data-aos="fade-up" className="flex flex-col items-center gap-y-4">
           <h2 className="text-white capitalize max-w-[43rem] leading-relaxed font-black text-3xl lg:text-5xl text-center">
             {translate("intro.title")}
           </h2>
@@ -36,8 +39,10 @@ export function Intro() {
             {translate("intro.label")}
           </p>
         </div>
-        <div className="hidden lg:block">{IntroImage1}</div>
-      </div>
+        <div className="hidden lg:block" data-aos="fade-right">
+          {IntroImage1}
+        </div>
+      </Container>
     </div>
   );
 }

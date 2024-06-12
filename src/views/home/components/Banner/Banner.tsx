@@ -10,7 +10,10 @@ export function Banner() {
   return (
     <Container className="w-full flex-col lg:flex-row items-center lg:items-start lg:pt-24 flex relative justify-between container mx-auto h-screen">
       <div className="flex flex-col items-center lg:items-start gap-y-6 lg:pt-32">
-        <h1 className="text-4xl lg:text-6xl text-center lg:text-left font-black">
+        <h1
+          data-aos="fade-right"
+          className="text-4xl lg:text-6xl text-center lg:text-left font-black"
+        >
           <span className="font-black text-textColor">
             {translate("banner.title.span1")}
           </span>
@@ -22,7 +25,11 @@ export function Banner() {
           </span>
         </h1>
 
-        <p className="text-lg lg:text-2xl text-center lg:text-left max-w-lg">
+        <p
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          className="text-lg lg:text-2xl text-center lg:text-left max-w-lg"
+        >
           {translate("banner.label")}
         </p>
 
@@ -35,7 +42,7 @@ export function Banner() {
       </div>
 
       <div className="relative flex -mt-28 lg:-mt-14">
-        <div className="p-2 lg:p-4 absolute items-center bottom-80 lg:bottom-44 -left-0 md:-left-32 lg:left-0 border pr-10 lg:pr-20 border-[#ffffff70] rounded-3xl bg-[#370C7532]  backdrop-blur-sm flex gap-x-4">
+        <div data-aos="fade-right" className="p-2 lg:p-4 absolute items-center bottom-80 lg:bottom-44 -left-0 md:-left-32 lg:left-0 border pr-10 lg:pr-20 border-[#ffffff70] rounded-3xl z-10 bg-[#370C7532]  backdrop-blur-sm flex gap-x-4">
           <div className="w-6 lg:w-14 h-6 lg:h-14 bg-[#D6BAFF] border border-white rounded-full" />
 
           <div className="flex flex-col">
@@ -49,9 +56,14 @@ export function Banner() {
           </div>
         </div>
 
-        <div className="w-[22rem] lg:w-full flex">{BannerImage}</div>
+        <div data-aos="fade-left" className="w-[22rem] lg:w-full flex">
+          {BannerImage}
+        </div>
 
-        <div className="p-2 lg:p-4 absolute items-center top-80 lg:top-1/2 right-0 md:-right-32 lg:-right-20 border pr-10 md:pr-20 border-[#ffffff70] rounded-3xl bg-[#1883E964]  backdrop-blur-sm flex gap-x-4">
+        <div
+          data-aos="fade-left"
+          className="p-2 lg:p-4 absolute items-center top-80 lg:top-1/2 right-0 md:-right-32 lg:-right-20 border pr-10 md:pr-20 border-[#ffffff70] rounded-3xl bg-[#1883E964]  backdrop-blur-sm flex gap-x-4"
+        >
           <div className="w-6 lg:w-14 h-6 lg:h-14 bg-[#D6BAFF] border border-white rounded-full" />
 
           <div className="flex flex-col">

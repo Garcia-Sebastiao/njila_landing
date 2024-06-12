@@ -7,7 +7,7 @@ export const MobilePath = (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
-    <g opacity="0.15" clip-path="url(#clip0_350_33)">
+    <g opacity="0.15" clipPath="url(#clip0_350_33)">
       <rect x="-93" width="1018.78" height="821" fill="url(#pattern0_350_33)" />
     </g>
     <defs>

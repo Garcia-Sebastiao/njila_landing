@@ -7,7 +7,7 @@ export const AboutUsIllustration = (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
-    <g clip-path="url(#clip0_470_17)">
+    <g clipPath="url(#clip0_470_17)">
       <rect width="675" height="675" rx="53" fill="url(#pattern0_470_17)" />
     </g>
     <defs>

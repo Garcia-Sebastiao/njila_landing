@@ -14,27 +14,27 @@ export function OurEssence() {
         </span>
       </h2>
 
-      <div className="relative flex flex-col gap-y-12 lg:flex-row">
-        <div className="w-full hidden lg:flex justify-center">
+      <div className="relative w-full flex flex-col lg:justify-between lg:items-center gap-y-12 lg:flex-row">
+        <div className="w-full -z-10 absolute left-1/2 -translate-x-1/2 top-0 hidden lg:flex justify-center">
           {EssencePath}
         </div>
 
         <EssenceCard
-          className="lg:absolute -bottom-56   -left-20"
+          className="lg:mt-[22rem] lg:ml-[4.4rem]"
           title={translate("our-essence.cards.mission.title")}
           label={translate("our-essence.cards.mission.label")}
           labelColor="text-[#662ABC90]"
           titleColor="bg-orangeFruit"
         />
         <EssenceCard
-          className="lg:absolute -bottom-32  left-1/2 lg:-translate-x-1/2"
+          className="lg:mt-16"
           title={translate("our-essence.cards.vision.title")}
           label={translate("our-essence.cards.vision.label")}
           labelColor="text-[#21374590]"
           titleColor="bg-blueOcean"
         />
         <EssenceCard
-          className="lg:absolute -bottom-0  -right-20"
+          className="lg:-mt-20 lg:mr-[4.4rem]"
           title={translate("our-essence.cards.values.title")}
           label={translate("our-essence.cards.values.label")}
           labelColor="text-[#1883E990]"

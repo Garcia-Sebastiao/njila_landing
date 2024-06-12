@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import { ContactsPath } from "./assets/ContactsPath";
+import { Container } from "@/components/layout/container/Container";
 
 export function Contacts() {
   const translate = useTranslations("app");
 
   return (
     <div className="w-full relative mt-32 lg:mt-64">
-      <div className="w-full mx-auto container relative flex flex-col justify-start">
+      <Container className="w-full relative flex flex-col justify-start">
         <div className="flex flex-col gap-y-6">
           <h2 className="font-black text-4xl">
             {translate("contacts.title.title")} <br />{" "}
@@ -31,7 +32,7 @@ export function Contacts() {
             </button>
           </form>
         </div>
-      </div>
+      </Container>
     </div>
   );
 }

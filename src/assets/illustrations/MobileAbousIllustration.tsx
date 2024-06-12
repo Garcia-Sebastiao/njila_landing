@@ -7,7 +7,7 @@ export const MobileAbout = (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
-    <g clip-path="url(#clip0_471_18)">
+    <g clipPath="url(#clip0_471_18)">
       <rect width="675" height="675" rx="53" fill="url(#pattern0_471_18)" />
     </g>
     <defs>

@@ -2,12 +2,13 @@ import { useTranslations } from "next-intl";
 import DesignIllustration from "../assets/Saly-10.svg";
 import { DesignIcon } from "../assets/DesignIcon";
 import Image from "next/image";
+import { Container } from "@/components/layout/container/Container";
 
 export function CustomDesign() {
   const translate = useTranslations("app");
 
   return (
-    <div className="container mx-auto flex flex-col items-center">
+    <Container className="flex flex-col items-center">
       <div className="flex flex-col gap-y-4 text-center">
         <h2 className="text-4xl font-black text-orangeFruit">
           {translate("services.title.title")}
@@ -23,11 +24,15 @@ export function CustomDesign() {
 
       <div className="w-full flex flex-col lg:flex-row items-center gap-x-32">
         <Image
+          data-aos="zoom-out-down"
           src={DesignIllustration}
           alt={translate("services.design.title")}
         />
 
-        <div className="flex flex-col relative gap-y-4 mt-14">
+        <div
+          data-aos="fade-left"
+          className="flex flex-col relative gap-y-4 mt-14"
+        >
           <h2 className="text-3xl lg:text-4xl font-black text-textColor">
             {translate("services.design.title")}
           </h2>
@@ -36,9 +41,11 @@ export function CustomDesign() {
             {translate("services.design.label")}
           </p>
 
-          <div className="absolute hidden lg:block -top-20 -right-16">{DesignIcon}</div>
+          <div className="absolute hidden lg:block -top-20 -right-16">
+            {DesignIcon}
+          </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

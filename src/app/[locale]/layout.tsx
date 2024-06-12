@@ -5,7 +5,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { Header } from "@/components/layout/header/Header";
 import "../globals.css";
 import { Footer } from "@/components/layout/footer/Footer";
-
 export const metadata: Metadata = {
   title: "NjilaBrand",
   description:

@@ -17,7 +17,7 @@ export function Marketing() {
 
       <Container className="relative z-10 mt-0 lg:mt-20 mx-auto flex flex-col items-center">
         <div className="w-full flex flex-col-reverse lg:flex-row  items-center gap-x-32">
-          <div className="flex flex-col relative gap-y-4 mt-14">
+          <div data-aos="fade-right" className="flex flex-col relative gap-y-4 mt-14">
             <h2 className="text-3xl lg:text-4xl font-black text-blueOcean">
               {translate("services.marketing.title.label")}{" "}
               <span className="text-orangeFruit">
@@ -31,7 +31,8 @@ export function Marketing() {
 
             <div className="absolute -top-32 -left-32 hidden lg:block">{MarketingIcon}</div>
           </div>
-          <Image src={MarketingIllustration} alt="Marketing" />
+
+          <Image data-aos="fade-left" src={MarketingIllustration} alt="Marketing" />
         </div>
       </Container>
     </div>

@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Member1, Member2 } from "./assets";
+import { Container } from "@/components/layout/container/Container";
 
 export function OurTeam() {
   const translate = useTranslations("app");
 
   return (
-    <div className="w-full flex container mx-auto flex-col items-center gap-y-32">
+    <Container className="w-full flex flex-col items-center gap-y-32">
       <div className="flex flex-col gap-y-4 items-center">
         <h2 className="text-4xl text-center font-black text-textColor">
           <span className="text-blueOcean">
@@ -20,8 +21,10 @@ export function OurTeam() {
         </p>
       </div>
 
+      {/* Mobile */}
+
       <div className="lg:hidden flex flex-col items-center gap-y-14">
-        <div className="flex flex-col items-center gap-y-8">
+        <div data-aos="fade-up" className="flex flex-col items-center gap-y-8">
           <div className="relative w-[20rem] h-[25rem]">
             <Image
               src={Member1}
@@ -49,7 +52,7 @@ export function OurTeam() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-y-8">
+        <div data-aos="fade-up" className="flex flex-col items-center gap-y-8">
           <div className="relative w-[20rem] h-[25rem]">
             <Image
               src={Member2}
@@ -78,9 +81,14 @@ export function OurTeam() {
         </div>
       </div>
 
+      {/* Desktop */}
+
       <div className="hidden lg:flex w-full justify-center items-center gap-x-16">
         <div className="flex flex-col gap-y-7">
-          <div className="flex flex-col gap-y-4 max-w-2xl">
+          <div
+            data-aos="fade-right"
+            className="flex flex-col gap-y-4 max-w-2xl"
+          >
             <h4 className="text-3xl font-black text-purpleColor">
               {translate("our-team.team.garcia.name")} -{" "}
               <span className="text-orangeFruit">
@@ -93,7 +101,11 @@ export function OurTeam() {
             </p>
           </div>
 
-          <div className="flex ml-16 flex-col gap-y-4 max-w-2xl">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            className="flex ml-16 flex-col gap-y-4 max-w-2xl"
+          >
             <h4 className="text-3xl font-black text-purpleColor">
               {translate("our-team.team.crisvan.name")} -{" "}
               <span className="text-orangeFruit">
@@ -112,7 +124,7 @@ export function OurTeam() {
         </div>
 
         <div className="flex">
-          <div className="relative w-[20rem] h-[25rem]">
+          <div data-aos="fade-left" className="relative w-[20rem] h-[25rem]">
             <Image
               src={Member1}
               alt="Garcia"
@@ -126,7 +138,10 @@ export function OurTeam() {
             </div>
           </div>
 
-          <div className="relative w-[20rem] h-[25rem] mt-44 -ml-14">
+          <div
+            data-aos="fade-right"
+            className="relative w-[20rem] h-[25rem] mt-44 -ml-14"
+          >
             <Image
               src={Member2}
               alt="Crisvan"
@@ -141,6 +156,6 @@ export function OurTeam() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

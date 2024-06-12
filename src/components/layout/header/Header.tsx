@@ -1,24 +1,46 @@
 "use client";
-
 import Link from "next/link";
 import { NavLinks } from "./utils";
 import { useTranslations } from "next-intl";
 import { FullLogo } from "@/assets/FullLogo";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "../container/Container";
 
 export function Header() {
   const translate = useTranslations("app");
   const [active, setActive] = useState<string>(NavLinks[0]);
   const [openMenu, setOpenMenu] = useState<boolean>(false);
+  const [headerFixed, setHEaderFixed] = useState<boolean>(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      document.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          setHEaderFixed(true);
+        } else {
+          setHEaderFixed(false);
+        }
+      });
+    }
+  }, []);
 
   return (
-    <header className="w-full sticky">
-      <Container className="flex py-14 items-center justify-between">
+    <header
+      className={`w-full ${
+        headerFixed &&
+        "bg-[#ffffff70] !py-8 backdrop-blur-xl z-40 fixed top-0 left-0"
+      } transition-all py-14`}
+    >
+      <Container className="flex items-center justify-between">
         <Link href="#">{FullLogo}</Link>
 
-        <button onClick={() => setOpenMenu(true)} className="lg:hidden">
-          Menu
+        <button
+          onClick={() => setOpenMenu(true)}
+          className="lg:hidden flex flex-col gap-y-2 w-10 items-end"
+        >
+          <div className="w-full h-1 bg-textColor rounded-lg" />
+          <div className="w-[80%] h-1 bg-textColor rounded-lg" />
+          <div className="w-[65%] h-1 bg-textColor rounded-lg" />
         </button>
 
         <nav
