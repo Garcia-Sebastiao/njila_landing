@@ -7,7 +7,10 @@ export function OurTeam() {
   const translate = useTranslations("app");
 
   return (
-    <Container className="w-full flex flex-col items-center gap-y-32">
+    <Container
+      id="our-team"
+      className="w-full flex flex-col items-center gap-y-32"
+    >
       <div className="flex flex-col gap-y-4 items-center">
         <h2 className="text-4xl text-center font-black text-textColor">
           <span className="text-blueOcean">
@@ -32,22 +35,24 @@ export function OurTeam() {
               className="w-full h-full object-cover rounded-[2rem]"
             />
 
-            <div className="bg-[#370C7532] backdrop-blur-md absolute top-8 -right-0 md:-right-32 lg:right-0 px-8 py-4 rounded-2xl border border-[#ffffff90] flex items-center justify-center">
+            <div className="bg-[#370C7532] backdrop-blur-md absolute bottom-8 -right-0 md:-right-32 lg:right-0 px-8 py-4 rounded-2xl border border-[#ffffff90] flex items-center justify-center">
               <span className="text-white font-bold text-2xl ">
-                Garcia Pedro
+                Veto Araújo
               </span>
             </div>
           </div>
           <div className="flex flex-col gap-y-4 max-w-2xl">
             <h4 className="text-3xl font-black text-purpleColor">
-              {translate("our-team.team.garcia.name")} -{" "}
-              <span className="text-orangeFruit">
-                {translate("our-team.team.garcia.role")}
-              </span>
+              Veto Araújo
+              <span className="text-orangeFruit">Director de Marketing</span>
             </h4>
 
             <p className="text-lg text-[#00000050]">
-              {translate("our-team.team.garcia.description")}
+              Veto Araújo é o diretor de marketing da Njilabrand e Designer. Com uma
+              carreira marcada por inovação e estratégias de marketing eficazes e design criativos,
+              Veto se destaca por sua habilidade em impulsionar o crescimento e
+              a visibilidade da marca. Sob sua liderança, Njilabrand tem
+              alcançado novos patamares.
             </p>
           </div>
         </div>
@@ -90,14 +95,16 @@ export function OurTeam() {
             className="flex flex-col gap-y-4 max-w-2xl"
           >
             <h4 className="text-3xl font-black text-purpleColor">
-              {translate("our-team.team.garcia.name")} -{" "}
-              <span className="text-orangeFruit">
-                {translate("our-team.team.garcia.role")}
-              </span>
+              Veto Araújo -{" "}
+              <span className="text-orangeFruit">Director de Marketing</span>
             </h4>
 
             <p className="text-lg text-[#00000050]">
-              {translate("our-team.team.garcia.description")}
+            Veto Araújo é o diretor de marketing da Njilabrand e Designer. Com uma
+              carreira marcada por inovação e estratégias de marketing eficazes e design criativos,
+              Veto se destaca por sua habilidade em impulsionar o crescimento e
+              a visibilidade da marca. Sob sua liderança, Njilabrand tem
+              alcançado novos patamares.
             </p>
           </div>
 
@@ -127,13 +134,13 @@ export function OurTeam() {
           <div data-aos="fade-left" className="relative w-[20rem] h-[25rem]">
             <Image
               src={Member1}
-              alt="Garcia"
+              alt="Veto Araújo"
               className="w-full h-full object-cover rounded-[2rem]"
             />
 
             <div className="bg-[#370C7532] backdrop-blur-md absolute top-8 -right-32 px-8 py-4 rounded-2xl border border-[#ffffff90] flex items-center justify-center">
               <span className="text-white font-bold text-2xl ">
-                Garcia Pedro
+                Veto Araújo
               </span>
             </div>
           </div>

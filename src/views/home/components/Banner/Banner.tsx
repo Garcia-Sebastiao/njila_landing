@@ -8,7 +8,7 @@ export function Banner() {
   const translate = useTranslations("app");
 
   return (
-    <Container className="w-full flex-col lg:flex-row items-center lg:items-start lg:pt-24 flex relative justify-between container mx-auto h-screen">
+    <Container id="home" className="w-full flex-col lg:flex-row items-center lg:items-start lg:pt-24 flex relative justify-between container mx-auto h-screen">
       <div className="flex flex-col items-center lg:items-start gap-y-6 lg:pt-32">
         <h1
           data-aos="fade-right"

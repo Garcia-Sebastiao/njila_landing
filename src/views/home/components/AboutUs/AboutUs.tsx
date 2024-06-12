@@ -7,7 +7,10 @@ import Image from "next/image";
 export function AboutUs() {
   const translate = useTranslations("app");
   return (
-    <Container className="flex flex-col lg:flex-row items-center gap-y-16 gap-x-32">
+    <Container
+      id="about-us"
+      className="flex flex-col lg:flex-row items-center gap-y-16 gap-x-32"
+    >
       <Image data-aos="fade-right" src={AboutImage} alt="" />
 
       <div data-aos="fade-left" className="flex flex-col gap-y-6">

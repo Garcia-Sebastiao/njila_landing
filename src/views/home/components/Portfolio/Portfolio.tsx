@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { Image1, Image2, Image3 } from "./assets";
+import { Container } from "@/components/layout/container/Container";
 
 export function Portfolio() {
   const translate = useTranslations("app");
 
   return (
-    <div className="w-full container mx-auto flex flex-col gap-y-24 items-center">
+    <Container id="portfolio" className="w-full container mx-auto flex flex-col gap-y-24 items-center">
       <div className="flex flex-col items-center gap-y-6">
         <h2 className="text-4xl font-black text-blueOcean">
           {translate("portfolio.title.label")}{" "}
@@ -74,6 +75,6 @@ export function Portfolio() {
           </div>
         </div>
       </div>
-    </div>
+    </Container>
   );
 }

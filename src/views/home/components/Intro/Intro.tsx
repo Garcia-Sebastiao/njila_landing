@@ -17,7 +17,7 @@ export function Intro() {
         </span>
         <Link
           data-aos="fade-up"
-          href="#"
+          href="#about-us"
           className="bg-white rounded-full flex justify-center items-center p-6 "
         >
           <div className="flex justify-center items-center w-4 md:w-auto h-4 md:h-auto">

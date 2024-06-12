@@ -6,7 +6,7 @@ export function Contacts() {
   const translate = useTranslations("app");
 
   return (
-    <div className="w-full relative mt-32 lg:mt-64">
+    <div id="contacts" className="w-full relative mt-32 lg:mt-64">
       <Container className="w-full relative flex flex-col justify-start">
         <div className="flex flex-col gap-y-6">
           <h2 className="font-black text-4xl">
