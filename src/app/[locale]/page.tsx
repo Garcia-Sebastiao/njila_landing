@@ -16,31 +16,24 @@ export default function App() {
     });
   }, []);
 
-  // useEffect(() => {
-  //   setTimeout(() => setIsLoading(false), 6000);
-  // });
+  useEffect(() => {
+    setTimeout(() => setIsLoading(false), 6000);
+  });
 
   return (
-    // <>
-    //   {isLoading ? (
-    //     <div className="w-full transition-all loader fixed top-0 left-0 z-50 bg-white h-screen flex justify-center items-center">
-    //       {FullLogo}
-    //     </div>
-    //   ) : (
-    //     <>
-    //       <div className="hidden lg:flex absolute -z-10 top-0 left-0">
-    //         {BannerIllustration}
-    //       </div>
-    //       <HomeView />
-    //     </>
-    //   )}
-    // </>
-
     <>
-      <div className="hidden lg:flex absolute -z-10 top-0 left-0">
-        {BannerIllustration}
-      </div>
-      <HomeView />
+      {isLoading ? (
+        <div className="w-full transition-all loader fixed top-0 left-0 z-50 bg-white h-screen flex justify-center items-center">
+          {FullLogo}
+        </div>
+      ) : (
+        <>
+          <div className="hidden lg:flex absolute -z-10 top-0 left-0">
+            {BannerIllustration}
+          </div>
+          <HomeView />
+        </>
+      )}
     </>
   );
 }

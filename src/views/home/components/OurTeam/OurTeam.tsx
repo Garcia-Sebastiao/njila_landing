@@ -48,11 +48,11 @@ export function OurTeam() {
             </h4>
 
             <p className="text-lg text-[#00000050]">
-              Veto Araújo é o diretor de marketing da Njilabrand e Designer. Com uma
-              carreira marcada por inovação e estratégias de marketing eficazes e design criativos,
-              Veto se destaca por sua habilidade em impulsionar o crescimento e
-              a visibilidade da marca. Sob sua liderança, Njilabrand tem
-              alcançado novos patamares.
+              Veto Araújo é o diretor de marketing da Njilabrand e Designer. Com
+              uma carreira marcada por inovação e estratégias de marketing
+              eficazes e design criativos, Veto se destaca por sua habilidade em
+              impulsionar o crescimento e a visibilidade da marca. Sob sua
+              liderança, Njilabrand tem alcançado novos patamares.
             </p>
           </div>
         </div>
@@ -100,11 +100,11 @@ export function OurTeam() {
             </h4>
 
             <p className="text-lg text-[#00000050]">
-            Veto Araújo é o diretor de marketing da Njilabrand e Designer. Com uma
-              carreira marcada por inovação e estratégias de marketing eficazes e design criativos,
-              Veto se destaca por sua habilidade em impulsionar o crescimento e
-              a visibilidade da marca. Sob sua liderança, Njilabrand tem
-              alcançado novos patamares.
+              Veto Araújo é o diretor de marketing da Njilabrand e Designer. Com
+              uma carreira marcada por inovação e estratégias de marketing
+              eficazes e design criativos, Veto se destaca por sua habilidade em
+              impulsionar o crescimento e a visibilidade da marca. Sob sua
+              liderança, Njilabrand tem alcançado novos patamares.
             </p>
           </div>
 
