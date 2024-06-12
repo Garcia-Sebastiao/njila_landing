@@ -5,3 +5,17 @@
 html {
   overflow-x: hidden !important;
 }
+
+.loader {
+  animation: scaleLoading 1.5s infinite ease-in-out;
+}
+
+@keyframes scaleLoading {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+}
